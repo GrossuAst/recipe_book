@@ -1,10 +1,10 @@
-import React from 'react';
-import styles from './app.module.scss';
+import { RouterProvider } from 'react-router-dom';
 
-function App() {
+function App({ router }) {
   return (
-    <div>
-    </div>
+    <>
+      <RouterProvider router={ router } />
+    </>
   );
 }
 
