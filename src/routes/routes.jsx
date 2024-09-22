@@ -1,12 +1,16 @@
+import HomePage from "../pages/home-page";
+import RecipePage from "../pages/recipe-page";
+import NotFoundPage from "../pages/not-found-page";
+
 const routes = [
     {
         path: '/',
-        element: <div>HOME PAGE</div>,
-        errorElement: <div>404</div>
+        element: <HomePage/>,
+        errorElement: <NotFoundPage />
     },
     {
         path: '/recipes/:id',
-        element: <div>RECIPE PAGE</div>
+        element: <RecipePage/>
     }
 ];
 
